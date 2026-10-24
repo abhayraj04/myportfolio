@@ -1,0 +1,21 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scratch video files
+*.mp4
+
+# Python / Environment caches
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Node dependencies
+node_modules/
+.npm/
+
+# Local logs & temp
+*.log
+.temp/

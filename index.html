@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abhay Raj - Aspiring Data Scientist & AI Developer. B.Tech CSE Graduate (2026), Dr. C. V. Raman University. Open to work in Data Science, Machine Learning, and AI roles across India & globally remote.">
+  <meta name="keywords" content="Abhay Raj, Aspiring Data Scientist, Open to Work, AI Developer, Machine Learning Engineer, Python, SQL, Pandas, NumPy, Scikit-learn, XGBoost, SHAP, Power BI, Streamlit, Dr. C V Raman University">
+  <meta name="author" content="Abhay Raj">
+  <meta name="theme-color" content="#050814">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Abhay Raj | Aspiring Data Scientist | Open to Work in Data & AI Roles">
+  <meta property="og:description" content="Aspiring Data Scientist & AI Developer building predictive models, machine learning pipelines, and intelligent applications with Python, SQL, and Scikit-learn.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="my photo.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abhay Raj | Aspiring Data Scientist | Open to Work in Data & AI Roles">
+  <meta name="twitter:description" content="Transforming raw data into predictive intelligence with Python, SQL, and Machine Learning.">
+
+  <title>Abhay Raj | Aspiring Data Scientist | Open to Work in Data & AI Roles</title>
+
+  <!-- Google Fonts: Outfit, Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Three.js 3D WebGL Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- INTERACTIVE MOUSE SPOTLIGHT (Desktop) -->
+  <div class="pointer-spotlight" id="pointerSpotlight" aria-hidden="true"></div>
+
+  <!-- AMBIENT BACKGROUND GLOW ORBS -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+
+  <!-- AMBIENT DATA CONSTELLATION CANVAS -->
+  <canvas id="dataConstellationCanvas" class="data-constellation-canvas" aria-hidden="true"></canvas>
+
+  <!-- FLOATING LUXURY DOCK NAVIGATION -->
+  <div class="navbar-wrapper">
+    <header class="navbar-container" id="navbar">
+      <nav class="navbar" id="mainNav">
+        <!-- BRAND LOGO WITH AURORA RING -->
+        <a href="#home" class="logo-wrapper" aria-label="Abhay Raj Home">
+          <div class="logo-badge-ring">
+            <div class="logo-badge">AR</div>
+          </div>
+          <div class="logo-info">
+            <span class="logo-text">Abhay Raj</span>
+            <span class="logo-sub">Data & AI Developer</span>
+          </div>
+        </a>
+
+        <!-- STREAMLINED LUXURY NAV LINKS DOCK -->
+        <div class="nav-dock-container">
+          <!-- MAGNETIC LIQUID ACTIVE CAPSULE -->
+          <div class="nav-pill-indicator" id="navPillIndicator" aria-hidden="true"></div>
+
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-item active" data-nav="home">Home</a></li>
+            <li><a href="#recruiter-corner" class="nav-item recruiter-nav" data-nav="recruiter-corner"><span class="recruiter-dot"></span>Recruiter Brief</a></li>
+            <li><a href="#about" class="nav-item" data-nav="about">About</a></li>
+            <li><a href="#skills" class="nav-item" data-nav="skills">Skills</a></li>
+            <li><a href="#projects" class="nav-item" data-nav="projects">Projects <span class="nav-count">4+ Live</span></a></li>
+            <li><a href="#sql-cases" class="nav-item" data-nav="sql-cases">SQL Cases</a></li>
+            <li><a href="#model-eval" class="nav-item" data-nav="model-eval">Evaluation</a></li>
+            <li><a href="#contact" class="nav-item" data-nav="contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- RIGHT ACTIONS: AI PILL & MOBILE TOGGLE -->
+        <div class="nav-actions-right">
+          <button class="nav-ai-btn" id="openChatNavBtn" type="button" aria-label="Open AI Assistant">
+            <span class="ai-btn-pulse"></span>
+            <span class="sparkle-icon">✨</span>
+            <span class="ai-btn-label">Ask Abhay AI</span>
+          </button>
+
+          <!-- MOBILE MENU TOGGLE -->
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" type="button" aria-expanded="false">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- HIGH-TECH SCROLL READING PROGRESS LINE -->
+      <div class="nav-scroll-progress-track" aria-hidden="true">
+        <div class="nav-scroll-progress-bar" id="navProgressBar"></div>
+      </div>
+    </header>
+  </div>
+
+  <!-- MAIN CONTAINER -->
+  <main class="page-container">
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <!-- OPEN TO WORK STATUS BANNER -->
+        <div class="hero-open-to-work-banner">
+          <span class="pulse-ring-green"></span>
+          <span class="otw-text"><strong>Open to Work:</strong> Immediate Availability for Data Science, AI & ML Roles</span>
+          <span class="otw-badge">Remote &bull; Hybrid &bull; On-Site</span>
+        </div>
+
+        <div class="hero-badge">
+          <span class="badge-status-dot"></span>
+          <span>B.Tech CSE Graduate (2022–2026) &bull; Dr. C. V. Raman University</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-name-highlight">Abhay Raj</span>
+          <span class="hero-role-title">Aspiring Data Scientist <span class="role-divider">|</span> AI & ML Developer</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          I build predictive machine learning models, intelligent algorithms, and end-to-end data pipelines using <strong>Python</strong>, <strong>SQL</strong>, <strong>Scikit-learn</strong>, and <strong>AI technologies</strong>. Passionate about uncovering patterns in complex datasets, engineering explainable models (SHAP), and deploying production-ready AI applications.
+        </p>
+
+        <p class="hero-focus-note">
+          Actively seeking entry-level opportunities as a <strong>Data Scientist</strong>, <strong>Machine Learning Engineer</strong>, or <strong>AI Developer</strong>.
+        </p>
+
+        <!-- CURRENTLY FOCUSED ON BAR -->
+        <div class="currently-focused-box">
+          <span class="focused-label">Core Specializations:</span>
+          <div class="focused-tags">
+            <span class="focus-tag"><span class="tag-dot cyan"></span>Data Science</span>
+            <span class="focus-tag"><span class="tag-dot purple"></span>Machine Learning & AI</span>
+            <span class="focus-tag"><span class="tag-dot emerald"></span>Predictive Modeling (XGBoost)</span>
+            <span class="focus-tag"><span class="tag-dot amber"></span>Advanced SQL</span>
+            <span class="focus-tag"><span class="tag-dot blue"></span>Python & EDA</span>
+            <span class="focus-tag"><span class="tag-dot indigo"></span>Model Explainability (SHAP)</span>
+          </div>
+        </div>
+
+        <!-- VOICE INTRODUCTION & AUDIO PLAYER -->
+        <div class="hero-voice-widget">
+          <div class="voice-card" id="voiceCard">
+            <div class="voice-card-top">
+              <button class="voice-play-btn" id="voiceButton" aria-label="Play audio introduction" type="button" title="Play / Pause Audio Introduction">
+                <span class="voice-play-icon" id="voiceIcon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </span>
+              </button>
+
+              <div class="voice-meta">
+                <div class="voice-header-row">
+                  <strong class="voice-title" id="voiceText">Listen to Audio Introduction</strong>
+                  <span class="voice-badge">
+                    <span class="voice-pulse-dot"></span>
+                    <span id="voiceDurationBadge">37s Audio</span>
+                  </span>
+                </div>
+                <div class="voice-sub-row">
+                  <span class="voice-sub">Spoken Profile &bull; Data Science &amp; AI</span>
+                  <span class="voice-timer" id="voiceTimer">0:00 / 0:37</span>
+                </div>
+              </div>
+
+              <div class="voice-wave-indicator" aria-hidden="true" title="Audio waveform">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <!-- INTERACTIVE PROGRESS BAR & SCRUBBER -->
+            <div class="voice-progress-container" id="voiceProgress" title="Click anywhere to seek">
+              <div class="voice-progress-bar" id="voiceProgressBar"></div>
+            </div>
+          </div>
+
+          <audio id="voiceAudio" preload="auto">
+            <source src="audio/abhay-introduction.wav" type="audio/wav">
+            <source src="audio/abhay-introduction.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+
+        <!-- CALL TO ACTIONS -->
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>🚀 Explore Projects</span>
+          </a>
+          <a href="Abhay_Raj.pdf" download="Abhay_Raj_Resume.pdf" class="btn btn-secondary">
+            <span>📥 Download Resume</span>
+          </a>
+          <button class="btn btn-ai" id="heroChatBtn" type="button">
+            <span>✨ Ask My AI Assistant</span>
+          </button>
+        </div>
+
+        <!-- HERO SOCIAL LINKS -->
+        <div class="hero-socials">
+          <a href="https://github.com/abhayraj04" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            <span class="social-tooltip">GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/abhay-raj-aa0928304" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <span class="social-tooltip">LinkedIn</span>
+          </a>
+          <a href="mailto:abhayraj74315@gmail.com" class="social-icon-btn" aria-label="Send Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <span class="social-tooltip">Email</span>
+          </a>
+          <a href="https://wa.me/919031531991?text=Hi%20Abhay,%20I%20saw%20your%20portfolio" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp Chat">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            <span class="social-tooltip">WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- HERO VISUAL -->
+      <div class="hero-visual">
+        <div class="hero-image-frame">
+          <div class="frame-glass-card">
+            <img src="my photo.jpg" alt="Abhay Raj - Aspiring Data Scientist" class="hero-portrait" loading="eager">
+            <div class="frame-glow"></div>
+            <div class="frame-overlay-tag">
+              <span class="status-indicator"></span>
+              <span>Abhay Raj &bull; B.Tech CSE (2022–2026)</span>
+            </div>
+          </div>
+
+          <!-- FLOATING METRICS BADGES -->
+          <div class="floating-badge badge-top-right">
+            <span class="badge-icon">🏏</span>
+            <div class="badge-content">
+              <strong>CricketIQ AI</strong>
+              <small>Live on Streamlit</small>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-middle-left">
+            <span class="badge-icon">📊</span>
+            <div class="badge-content">
+              <strong>Churn Intelligence</strong>
+              <small>Predictive ML Platform</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         RECRUITER CORNER (QUICK RECRUITER SUMMARY)
+         ======================================================== -->
+    <section class="section recruiter-corner" id="recruiter-corner">
+      <div class="recruiter-card">
+        <div class="recruiter-header">
+          <div class="recruiter-title-wrap">
+            <span class="badge-pill-amber">⚡ 30-Second Recruiter Summary</span>
+            <h2 class="recruiter-heading">Recruiter Corner</h2>
+            <p class="recruiter-sub">A quick snapshot for technical recruiters and hiring managers looking for entry-level data talent.</p>
+          </div>
+          <div class="recruiter-cta-actions">
+            <a href="Abhay_Raj.pdf" download="Abhay_Raj_Resume.pdf" class="btn btn-primary">
+              <span>📥 Download Official Resume</span>
+            </a>
+            <a href="mailto:abhayraj74315@gmail.com" class="btn btn-secondary">
+              <span>📧 Email Abhay</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="recruiter-points-grid">
+          <div class="recruiter-point">
+            <span class="point-num">01</span>
+            <h4>Target Roles (Open to Work)</h4>
+            <p><strong>Aspiring Data Scientist</strong>, <strong>AI & Machine Learning Engineer</strong>, <strong>Data Analyst</strong>, <strong>Python / ML Developer</strong>.</p>
+          </div>
+          <div class="recruiter-point">
+            <span class="point-num">02</span>
+            <h4>Core AI & Data Toolkit</h4>
+            <p>Python (Pandas, NumPy, Scikit-learn, XGBoost), Advanced SQL (MySQL), ML Model Evaluation & SHAP, Streamlit, Git.</p>
+          </div>
+          <div class="recruiter-point">
+            <span class="point-num">03</span>
+            <h4>Education</h4>
+            <p>B.Tech in Computer Science and Engineering, Dr. C. V. Raman University (2022–2026, Completed).</p>
+          </div>
+          <div class="recruiter-point">
+            <span class="point-num">04</span>
+            <h4>Practical Production Work</h4>
+            <p>Web Development Intern at Info Era Software Services (Sep–Oct 2025) & 4 live cloud-deployed predictive platforms.</p>
+          </div>
+        </div>
+
+        <!-- ANIMATED KEY METRICS STRIP -->
+        <div class="recruiter-metrics-strip">
+          <div class="recruiter-stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="4" data-suffix="+">0</span>
+            </div>
+            <span class="stat-label">Live Deployed Flagships</span>
+          </div>
+          <div class="recruiter-stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="84" data-suffix="%">0</span>
+            </div>
+            <span class="stat-label">Best Churn ROC-AUC</span>
+          </div>
+          <div class="recruiter-stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="79" data-suffix="%">0</span>
+            </div>
+            <span class="stat-label">Retention Recall Rate</span>
+          </div>
+          <div class="recruiter-stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="2026" data-suffix="">0</span>
+            </div>
+            <span class="stat-label">B.Tech CSE Graduate</span>
+          </div>
+        </div>
+
+        <div class="recruiter-footer-bar">
+          <span class="recruiter-status-note">
+            <span class="status-indicator"></span> <strong>Immediate Availability (Open to Work):</strong> Actively available for immediate hire in Data Science, AI, and Machine Learning positions across India (Remote, Hybrid, or On-site).
+          </span>
+          <div class="recruiter-quick-links">
+            <a href="#projects" class="quick-link-item">View 4 Flagship Projects ↓</a>
+            <a href="#sql-cases" class="quick-link-item">Inspect SQL Studies ↓</a>
+            <a href="#model-eval" class="quick-link-item">Model Evaluation ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about" id="about">
+      <div class="section-header">
+        <span class="section-label">Background & Philosophy</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-narrative">
+          <p class="about-lead">
+            I am a <strong>Computer Science Engineering graduate</strong> from <strong>Dr. C. V. Raman University</strong>, with a passion for data analytics, data science, and intelligent applications.
+          </p>
+
+          <p class="about-description">
+            I enjoy working across the data lifecycle, from understanding business problems and cleaning datasets to performing exploratory data analysis, developing predictive models, and communicating results through visualizations.
+          </p>
+
+          <p class="about-description">
+            My approach is based on continuous learning and practical implementation. Rather than limiting myself to theoretical knowledge, I work on projects that help me understand how data can be used to uncover patterns, evaluate performance, and support better decisions.
+          </p>
+
+          <!-- CAREER OBJECTIVE BOX -->
+          <div class="career-objective-box">
+            <div class="objective-header">
+              <span class="objective-icon">🎯</span>
+              <h3 class="objective-title">Career Objective & Open to Work</h3>
+            </div>
+            <p class="objective-text">
+              I am an <strong>Aspiring Data Scientist actively seeking entry-level opportunities in Data Science, Machine Learning, and AI Development</strong>. I am eager to apply my practical knowledge of statistical analysis, predictive modeling (XGBoost, Random Forest), feature engineering, SQL database querying, and model explainability (SHAP) while contributing to real-world, high-impact business systems.
+            </p>
+          </div>
+
+          <!-- WHAT I VALUE -->
+          <div class="values-section">
+            <h3 class="values-title">What I Value</h3>
+            <div class="values-grid">
+              <div class="value-item">
+                <span class="value-check">✓</span>
+                <p>Learning through practical implementation.</p>
+              </div>
+              <div class="value-item">
+                <span class="value-check">✓</span>
+                <p>Writing understandable and maintainable code.</p>
+              </div>
+              <div class="value-item">
+                <span class="value-check">✓</span>
+                <p>Checking data quality before drawing conclusions.</p>
+              </div>
+              <div class="value-item">
+                <span class="value-check">✓</span>
+                <p>Evaluating models instead of relying on accuracy alone.</p>
+              </div>
+              <div class="value-item">
+                <span class="value-check">✓</span>
+                <p>Explaining technical findings in simple language.</p>
+              </div>
+              <div class="value-item">
+                <span class="value-check">✓</span>
+                <p>Continuously improving through feedback and experimentation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-sidebar">
+          <div class="quick-facts-card">
+            <h3 class="quick-facts-title">Profile Snapshot</h3>
+            <ul class="facts-list">
+              <li>
+                <span class="fact-label">Name:</span>
+                <span class="fact-value">Abhay Raj</span>
+              </li>
+              <li>
+                <span class="fact-label">Degree:</span>
+                <span class="fact-value">B.Tech in Computer Science & Engineering</span>
+              </li>
+              <li>
+                <span class="fact-label">Graduation:</span>
+                <span class="fact-value status-badge-pill">2022–2026 (Completed)</span>
+              </li>
+              <li>
+                <span class="fact-label">University:</span>
+                <span class="fact-value">Dr. C. V. Raman University &bull; Vaishali, Bihar</span>
+              </li>
+              <li>
+                <span class="fact-label">Internship:</span>
+                <span class="fact-value">Info Era Software Services (Sep–Oct 2025)</span>
+              </li>
+              <li>
+                <span class="fact-label">Career Goal:</span>
+                <span class="fact-value status-badge-pill" style="background: rgba(6, 182, 212, 0.15); color: var(--cyan); border-color: rgba(6, 182, 212, 0.3);">Aspiring Data Scientist | AI & ML</span>
+              </li>
+              <li>
+                <span class="fact-label">Status:</span>
+                <span class="fact-value status-badge-pill" style="background: rgba(16, 185, 129, 0.15); color: #a7f3d0; border-color: rgba(16, 185, 129, 0.3);">Open to Work (Immediate)</span>
+              </li>
+              <li>
+                <span class="fact-label">Location:</span>
+                <span class="fact-value">India (Open to Remote / Hybrid / Relocation)</span>
+              </li>
+            </ul>
+
+            <div class="quick-actions">
+              <a href="#projects" class="btn btn-outline-full">Browse Live Deployments →</a>
+              <button class="btn btn-ai-full" id="aboutChatBtn" type="button">✨ Ask AI About Abhay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I DO SECTION -->
+    <section class="section what-i-do" id="what-i-do">
+      <div class="section-header">
+        <span class="section-label">Core Capabilities</span>
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">Bridging raw data, structured SQL queries, predictive machine learning, and clean visual storytelling.</p>
+      </div>
+
+      <div class="what-i-do-grid">
+        <!-- 1. Data Analysis -->
+        <div class="what-card">
+          <div class="what-card-icon data-icon">🔍</div>
+          <h3 class="what-card-title">Data Analysis</h3>
+          <p class="what-card-text">
+            Explore datasets, identify trends, investigate relationships, and extract useful insights to answer analytical questions.
+          </p>
+        </div>
+
+        <!-- 2. Data Visualization -->
+        <div class="what-card">
+          <div class="what-card-icon viz-icon">📊</div>
+          <h3 class="what-card-title">Data Visualization</h3>
+          <p class="what-card-text">
+            Transform complex information into clear charts, dashboards, and visual stories that make findings easier to understand.
+          </p>
+        </div>
+
+        <!-- 3. Machine Learning -->
+        <div class="what-card">
+          <div class="what-card-icon ml-icon">🤖</div>
+          <h3 class="what-card-title">Machine Learning</h3>
+          <p class="what-card-text">
+            Build and evaluate predictive models, compare their performance, and investigate which features contribute to predictions.
+          </p>
+        </div>
+
+        <!-- 4. Database Management -->
+        <div class="what-card">
+          <div class="what-card-icon db-icon">🗄️</div>
+          <h3 class="what-card-title">Database Management</h3>
+          <p class="what-card-text">
+            Use SQL to retrieve, filter, join, aggregate, and analyze structured data for reporting and decision-making.
+          </p>
+        </div>
+
+        <!-- 5. End-to-End Projects -->
+        <div class="what-card span-full">
+          <div class="what-card-icon project-icon">🚀</div>
+          <h3 class="what-card-title">End-to-End Projects</h3>
+          <p class="what-card-text">
+            Develop complete analytical applications that combine data processing, model development, visualizations, and user-friendly interfaces.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills" id="skills">
+      <div class="section-header">
+        <span class="section-label">Verified Competencies</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Only skills and techniques I have actually used in projects and can confidently explain in an interview.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- 1. Programming -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon prog-icon">💻</div>
+            <div>
+              <h3 class="category-title">Programming</h3>
+              <p class="category-desc">Core languages used for data manipulation</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <!-- 2. Data Analysis -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon data-icon">📈</div>
+            <div>
+              <h3 class="category-title">Data Analysis</h3>
+              <p class="category-desc">Libraries and analytical methods</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Exploratory Data Analysis</span>
+            <span class="skill-tag">Data Cleaning</span>
+          </div>
+        </div>
+
+        <!-- 3. Visualization -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon viz-icon">🎨</div>
+            <div>
+              <h3 class="category-title">Visualization</h3>
+              <p class="category-desc">Dashboard tools and chart libraries</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Seaborn</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Excel</span>
+          </div>
+        </div>
+
+        <!-- 4. Machine Learning -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon ml-icon">🧠</div>
+            <div>
+              <h3 class="category-title">Machine Learning</h3>
+              <p class="category-desc">Modeling, validation, and explainability</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">Feature Engineering</span>
+            <span class="skill-tag">Classification</span>
+            <span class="skill-tag">Model Evaluation</span>
+            <span class="skill-tag">Explainability (SHAP)</span>
+          </div>
+        </div>
+
+        <!-- 5. Databases -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon db-icon">🗄️</div>
+            <div>
+              <h3 class="category-title">Databases</h3>
+              <p class="category-desc">Relational and document storage</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Database Management</span>
+            <span class="skill-tag">Joins</span>
+            <span class="skill-tag">Subqueries</span>
+            <span class="skill-tag">CRUD Operations</span>
+          </div>
+        </div>
+
+        <!-- 6. Tools -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon tool-icon">🛠️</div>
+            <div>
+              <h3 class="category-title">Tools & Environment</h3>
+              <p class="category-desc">Development and version control</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Jupyter Notebook</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         DATA ANALYSIS WORKFLOW SECTION
+         ======================================================== -->
+    <section class="section workflow" id="workflow">
+      <div class="section-header">
+        <span class="section-label">Methodology</span>
+        <h2 class="section-title">My Approach to Problem-Solving</h2>
+        <p class="section-subtitle">A disciplined, step-by-step workflow followed across all data analysis and machine learning projects.</p>
+      </div>
+
+      <div class="workflow-steps-container">
+        <!-- STEP 1 -->
+        <div class="workflow-step-card">
+          <div class="step-badge">Step 1</div>
+          <h3 class="step-title">Understand Problem & Objective</h3>
+          <p class="step-desc">Define the core question, understand business context, and outline measurable analytical objectives.</p>
+        </div>
+
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+
+        <!-- STEP 2 -->
+        <div class="workflow-step-card">
+          <div class="step-badge">Step 2</div>
+          <h3 class="step-title">Inspect Data Quality</h3>
+          <p class="step-desc">Audit schemas, check distributions, detect missing values, and flag data anomalies early.</p>
+        </div>
+
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+
+        <!-- STEP 3 -->
+        <div class="workflow-step-card">
+          <div class="step-badge">Step 3</div>
+          <h3 class="step-title">Clean & Preprocess</h3>
+          <p class="step-desc">Handle missing values, encode categoricals, remove duplicates, and normalize numerical features.</p>
+        </div>
+
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+
+        <!-- STEP 4 -->
+        <div class="workflow-step-card">
+          <div class="step-badge">Step 4</div>
+          <h3 class="step-title">Exploratory Analysis (EDA)</h3>
+          <p class="step-desc">Identify distributions, correlation heatmaps, outliers, and uncover underlying patterns.</p>
+        </div>
+
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+
+        <!-- STEP 5 -->
+        <div class="workflow-step-card">
+          <div class="step-badge">Step 5</div>
+          <h3 class="step-title">Visualize or Model</h3>
+          <p class="step-desc">Build clear charts or train appropriate machine learning models suited to the target problem.</p>
+        </div>
+
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+
+        <!-- STEP 6 -->
+        <div class="workflow-step-card">
+          <div class="step-badge">Step 6</div>
+          <h3 class="step-title">Evaluate Results & Limitations</h3>
+          <p class="step-desc">Test with appropriate metrics (ROC-AUC, Precision, Recall), examine trade-offs, and state assumptions.</p>
+        </div>
+
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+
+        <!-- STEP 7 -->
+        <div class="workflow-step-card highlight-step">
+          <div class="step-badge green-badge">Step 7</div>
+          <h3 class="step-title">Communicate Insights</h3>
+          <p class="step-desc">Translate technical findings into clear, actionable recommendations and next steps.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects" id="projects">
+      <div class="section-header-row">
+        <div class="section-header">
+          <span class="section-label">Hands-On Implementations</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Practical applications combining data analysis, machine learning, and clean implementation. Click <strong>"Quick Preview"</strong> to inspect in-app or <strong>"Launch"</strong> to open live.</p>
+        </div>
+
+        <!-- FILTER TABS -->
+        <div class="project-filter-tabs" role="tablist">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All (6)</button>
+          <button class="filter-tab" data-filter="ai-ml" role="tab" aria-selected="false">AI & Machine Learning (2)</button>
+          <button class="filter-tab" data-filter="web-fullstack" role="tab" aria-selected="false">Full-Stack & Web (3)</button>
+          <button class="filter-tab" data-filter="analytics" role="tab" aria-selected="false">Analytics & UI (2)</button>
+        </div>
+      </div>
+
+      <div class="projects-container">
+
+        <!-- PROJECT 1: CricketIQ AI -->
+        <article class="project-showcase-card featured-flagship" data-category="ai-ml analytics">
+          <div class="project-card-header">
+            <div class="project-pill-row">
+              <span class="project-badge badge-ai">🏏 Cricket Analytics & Prediction</span>
+              <span class="project-status-tag live">● Live on Streamlit</span>
+            </div>
+            <h3 class="project-card-title">CricketIQ AI — Match Analytics & Lineup Curator</h3>
+          </div>
+
+          <p class="project-summary">
+            <strong>Problem:</strong> Cricket match analysis and fantasy squad curation often rely on gut feel rather than ball-by-ball performance patterns.
+          </p>
+          <p class="project-summary">
+            <strong>Solution:</strong> Built an analytics dashboard on Streamlit exploring international ball-tracking data, visualizing batter/bowler head-to-head match-up clusters, predicting match phases via XGBoost, and selecting balanced squads with Impact Player constraints.
+          </p>
+
+          <div class="project-feature-list">
+            <div class="feature-bullet">
+              <span class="bullet-check">✓</span>
+              <span><strong>Historical Analysis:</strong> Bowler delivery clusters, wagon wheel trajectories, and phase-wise strike rates.</span>
+            </div>
+            <div class="feature-bullet">
+              <span class="bullet-check">✓</span>
+              <span><strong>Prediction Engine:</strong> Evaluated win likelihood trends using historical match state parameters.</span>
+            </div>
+            <div class="feature-bullet">
+              <span class="bullet-check">✓</span>
+              <span><strong>What I Learned:</strong> Feature engineering from granular ball-by-ball sports datasets and handling non-linear player dynamics.</span>
+            </div>
+          </div>
+
+          <div class="project-tech-badges">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">XGBoost</span>
+            <span class="tech-tag">Plotly</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">NumPy</span>
+          </div>
+
+          <!-- UI/UX ARCHITECTURE & DESIGN CRAFT -->
+          <div class="project-ux-strip">
+            <span class="ux-tag"><span class="ux-tag-icon">🎯</span><strong>UX Architecture:</strong> High-Density Match Analytics</span>
+            <span class="ux-tag"><span class="ux-tag-icon">⚡</span><strong>Micro-Interaction:</strong> Instant Ball-by-Ball Dynamic Filtering</span>
+            <span class="ux-tag"><span class="ux-tag-icon">♿</span><strong>Accessibility:</strong> WCAG AAA Visual Contrast</span>
+          </div>
+
+          <div class="project-action-row">
+            <button class="btn btn-project-preview preview-project-btn" data-url="https://cricketiq-ai-6v9zshmcx5xybirrsucsoh.streamlit.app/?embed=true" data-title="CricketIQ AI — Cricket Analytics Platform" type="button">
+              <span>👁️ Quick Preview</span>
+            </button>
+            <a href="https://cricketiq-ai-6v9zshmcx5xybirrsucsoh.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-project-live">
+              <span>🚀 Launch Live</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <button class="btn btn-project-ai ask-ai-project-btn" data-project="CricketIQ AI" type="button">
+              <span>🤖 Ask AI</span>
+            </button>
+            <a href="https://github.com/abhayraj04" target="_blank" rel="noopener noreferrer" class="btn btn-project-code">
+              <span>GitHub</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Customer Churn Intelligence Platform -->
+        <article class="project-showcase-card featured-flagship" data-category="ai-ml analytics">
+          <div class="project-card-header">
+            <div class="project-pill-row">
+              <span class="project-badge badge-ml">📊 Predictive Analytics & Retention</span>
+              <span class="project-status-tag live">● Live on Streamlit</span>
+            </div>
+            <h3 class="project-card-title">Customer Churn Intelligence Platform</h3>
+          </div>
+
+          <p class="project-summary">
+            <strong>Problem:</strong> Subscription-based businesses lose recurring revenue when customers cancel contracts without early warning signals.
+          </p>
+          <p class="project-summary">
+            <strong>Solution:</strong> An end-to-end predictive framework trained on telecom customer profiles. Computes churn probability, provides SHAP explainability for individual predictions, and offers an interactive parameter simulator to explore retention strategies.
+          </p>
+
+          <div class="project-feature-list">
+            <div class="feature-bullet">
+              <span class="bullet-check">✓</span>
+              <span><strong>Data Quality Checks:</strong> Missing value handling, categorical encoding, and tenure/charge normalization.</span>
+            </div>
+            <div class="feature-bullet">
+              <span class="bullet-check">✓</span>
+              <span><strong>Model Explainability:</strong> Unveils top contributing factors (tenure, month-to-month contracts, fiber optic charges) with SHAP.</span>
+            </div>
+            <div class="feature-bullet">
+              <span class="bullet-check">✓</span>
+              <span><strong>What I Learned:</strong> Evaluating classifiers using ROC-AUC and Recall rather than accuracy alone, given class imbalance.</span>
+            </div>
+          </div>
+
+          <div class="project-tech-badges">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">SHAP</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Matplotlib</span>
+          </div>
+
+          <!-- UI/UX ARCHITECTURE & DESIGN CRAFT -->
+          <div class="project-ux-strip">
+            <span class="ux-tag"><span class="ux-tag-icon">🧠</span><strong>Explainable UI:</strong> Visual SHAP Feature Contribution Waterfall</span>
+            <span class="ux-tag"><span class="ux-tag-icon">🎛️</span><strong>Interactive UX:</strong> What-If Scenario Slider Simulation</span>
+            <span class="ux-tag"><span class="ux-tag-icon">👁️</span><strong>Human Factors:</strong> Colorblind-Safe Risk Gauges</span>
+          </div>
+
+          <div class="project-action-row">
+            <button class="btn btn-project-preview preview-project-btn" data-url="https://customer-churn-intelligence-platform-h9fbshxjfay2vvvt4perax.streamlit.app/?embed=true" data-title="Customer Churn Intelligence Platform" type="button">
+              <span>👁️ Quick Preview</span>
+            </button>
+            <a href="https://customer-churn-intelligence-platform-h9fbshxjfay2vvvt4perax.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-project-live">
+              <span>🚀 Launch Live</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <button class="btn btn-project-ai ask-ai-project-btn" data-project="Customer Churn Intelligence Platform" type="button">
+              <span>🤖 Ask AI</span>
+            </button>
+            <a href="https://github.com/abhayraj04" target="_blank" rel="noopener noreferrer" class="btn btn-project-code">
+              <span>GitHub</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Campus Placement Portal -->
+        <article class="project-showcase-card" data-category="web-fullstack">
+          <div class="project-card-header">
+            <div class="project-pill-row">
+              <span class="project-badge badge-web">🎓 Full-Stack & Database Application</span>
+              <span class="project-status-tag live-render">● Live on Render</span>
+            </div>
+            <h3 class="project-card-title">Campus Placement Portal</h3>
+          </div>
+
+          <p class="project-summary">
+            <strong>Problem:</strong> Coordinating campus drives across hundreds of students and multiple recruiters manually creates reporting bottlenecks.
+          </p>
+          <p class="project-summary">
+            <strong>Solution:</strong> A multi-role web platform streamlining eligibility filtering, job postings, application submissions, and placement summary reporting for university coordinators.
+          </p>
+
+          <div class="project-feature-list">
+            <div class="feature-bullet">
+              <span class="bullet-check">✓</span>
+              <span><strong>Relational Queries:</strong> Automated student eligibility filtering based on GPA, backlog counts, and branch criteria.</span>
+            </div>
+            <div class="feature-bullet">
+              <span class="bullet-check">✓</span>
+              <span><strong>Backend Handling:</strong> Database connectivity, session management, and role-based application workflows.</span>
+            </div>
+            <div class="feature-bullet">
+              <span class="bullet-check">✓</span>
+              <span><strong>What I Learned:</strong> Database schema design, foreign key relationships, and writing multi-table join queries.</span>
+            </div>
+          </div>
+
+          <div class="project-tech-badges">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MySQL / MongoDB</span>
+            <span class="tech-tag">REST APIs</span>
+            <span class="tech-tag">Render</span>
+          </div>
+
+          <div class="project-action-row">
+            <button class="btn btn-project-preview preview-project-btn" data-url="https://campus-placement-portal-2663.onrender.com" data-title="Campus Placement Portal" type="button">
+              <span>👁️ Quick Preview</span>
+            </button>
+            <a href="https://campus-placement-portal-2663.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-project-live">
+              <span>🚀 Launch Live</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <button class="btn btn-project-ai ask-ai-project-btn" data-project="Campus Placement Portal" type="button">
+              <span>🤖 Ask AI</span>
+            </button>
+            <a href="https://github.com/abhayraj04" target="_blank" rel="noopener noreferrer" class="btn btn-project-code">
+              <span>GitHub</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: India Pilgrimage Platform -->
+        <article class="project-showcase-card" data-category="web-fullstack">
+          <div class="project-card-header">
+            <div class="project-pill-row">
+              <span class="project-badge badge-travel">🕉️ Web Application & Discovery</span>
+              <span class="project-status-tag live-vercel">● Live on Vercel</span>
+            </div>
+            <h3 class="project-card-title">India Pilgrimage — Destination & Travel Platform</h3>
+          </div>
+
+          <p class="project-summary">
+            <strong>Problem:</strong> Travelers planning spiritual journeys often struggle to find unified schedules, ritual information, and budget calculations in one place.
+          </p>
+          <p class="project-summary">
+            <strong>Solution:</strong> An interactive pilgrimage portal with instant destination autocomplete search, ritual guides, online booking workflows, and an interactive travel budget estimator.
+          </p>
+
+          <div class="project-feature-list">
+            <div class="feature-bullet">
+              <span class="bullet-check">✓</span>
+              <span><strong>Instant Search & Filtering:</strong> Client-side indexing providing fast destination lookups across regions.</span>
+            </div>
+            <div class="feature-bullet">
+              <span class="bullet-check">✓</span>
+              <span><strong>Interactive UI:</strong> 3D card flips, responsive photo galleries, and budget calculations.</span>
+            </div>
+            <div class="feature-bullet">
+              <span class="bullet-check">✓</span>
+              <span><strong>What I Learned:</strong> Component-based front-end design, event-driven state updates, and cloud hosting on Vercel.</span>
+            </div>
+          </div>
+
+          <div class="project-tech-badges">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Bootstrap 5</span>
+            <span class="tech-tag">HTML5 / CSS3</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+
+          <div class="project-action-row">
+            <button class="btn btn-project-preview preview-project-btn" data-url="https://india-pilgrimage.vercel.app/" data-title="India Pilgrimage Platform" type="button">
+              <span>👁️ Quick Preview</span>
+            </button>
+            <a href="https://india-pilgrimage.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-project-live">
+              <span>🚀 Launch Live</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <button class="btn btn-project-ai ask-ai-project-btn" data-project="India Pilgrimage" type="button">
+              <span>🤖 Ask AI</span>
+            </button>
+            <a href="https://github.com/abhayraj04" target="_blank" rel="noopener noreferrer" class="btn btn-project-code">
+              <span>GitHub</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 5: Dynamic E-Commerce Platform -->
+        <article class="project-showcase-card" data-category="web-fullstack">
+          <div class="project-card-header">
+            <div class="project-pill-row">
+              <span class="project-badge badge-web">🛍️ Front-End Architecture</span>
+              <span class="project-status-tag">● Web Application</span>
+            </div>
+            <h3 class="project-card-title">Dynamic E-Commerce & Cart Platform</h3>
+          </div>
+
+          <p class="project-summary">
+            A front-end shopping application demonstrating clean state management, persistent client storage (LocalStorage), product filtering, and dynamic order price calculations.
+          </p>
+
+          <div class="project-tech-badges">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML5 / CSS3</span>
+            <span class="tech-tag">DOM Manipulation</span>
+            <span class="tech-tag">Local Storage</span>
+          </div>
+
+          <div class="project-action-row">
+            <a href="https://github.com/abhayraj04" target="_blank" rel="noopener noreferrer" class="btn btn-project-code">
+              <span>View Source on GitHub</span>
+            </a>
+            <button class="btn btn-project-ai ask-ai-project-btn" data-project="E-Commerce Platform" type="button">
+              <span>🤖 Ask AI</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- PROJECT 6: Modern UI Component Suite -->
+        <article class="project-showcase-card" data-category="analytics">
+          <div class="project-card-header">
+            <div class="project-pill-row">
+              <span class="project-badge badge-ui">🎨 UI/UX & Interactions</span>
+              <span class="project-status-tag">● Component Suite</span>
+            </div>
+            <h3 class="project-card-title">Interactive Sidebar & Sliding Navigation</h3>
+          </div>
+
+          <p class="project-summary">
+            A lightweight, accessible navigation component featuring hardware-accelerated transitions, keyboard accessibility, and outside-click listeners with zero external dependencies.
+          </p>
+
+          <div class="project-tech-badges">
+            <span class="tech-tag">CSS3 Flexbox</span>
+            <span class="tech-tag">Vanilla JS</span>
+            <span class="tech-tag">Accessibility (a11y)</span>
+          </div>
+
+          <div class="project-action-row">
+            <a href="https://github.com/abhayraj04" target="_blank" rel="noopener noreferrer" class="btn btn-project-code">
+              <span>View Source on GitHub</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SQL CASE STUDIES SECTION
+         ======================================================== -->
+    <section class="section sql-cases" id="sql-cases">
+      <div class="section-header">
+        <span class="section-label">Database Analytics</span>
+        <h2 class="section-title">SQL Case Studies</h2>
+        <p class="section-subtitle">Practical SQL queries addressing real-world analytical questions using joins, aggregations, window functions, and subqueries.</p>
+      </div>
+
+      <div class="sql-cases-grid">
+        <!-- CASE STUDY 1: Churn & Cohort Analysis -->
+        <div class="sql-case-card">
+          <div class="case-card-header">
+            <span class="case-badge">Case Study 1 &bull; Window Functions & Aggregation</span>
+            <h3 class="case-title">Customer Retention & Monthly Revenue at Risk</h3>
+            <p class="case-business-q">
+              <strong>Business Question:</strong> Which contract cohorts contribute the highest churn rate and total lost monthly revenue, and how do they rank within each payment category?
+            </p>
+          </div>
+
+          <div class="code-block-container">
+            <div class="code-block-header">
+              <span>MySQL / PostgreSQL Query</span>
+              <button class="copy-code-btn" data-code-id="sqlCode1" type="button">Copy SQL</button>
+            </div>
+            <pre><code id="sqlCode1">-- Analyze churn rate and revenue at risk by contract and payment method
+SELECT 
+    contract_type,
+    payment_method,
+    COUNT(customer_id) AS total_customers,
+    SUM(CASE WHEN churn_status = 'Yes' THEN 1 ELSE 0 END) AS churned_customers,
+    ROUND(AVG(CASE WHEN churn_status = 'Yes' THEN 1.0 ELSE 0.0 END) * 100, 2) AS churn_rate_pct,
+    ROUND(SUM(CASE WHEN churn_status = 'Yes' THEN monthly_charges ELSE 0 END), 2) AS monthly_revenue_at_risk,
+    DENSE_RANK() OVER (
+        PARTITION BY payment_method 
+        ORDER BY SUM(CASE WHEN churn_status = 'Yes' THEN monthly_charges ELSE 0 END) DESC
+    ) AS risk_rank_in_payment_group
+FROM telecom_customers
+GROUP BY contract_type, payment_method
+HAVING COUNT(customer_id) >= 50
+ORDER BY monthly_revenue_at_risk DESC;</code></pre>
+          </div>
+
+          <div class="case-findings">
+            <strong>Key Analytical Insight:</strong> Month-to-month contracts paying via electronic check accounted for over 55% of total revenue at risk, highlighting priority targets for quarterly retention incentives.
+          </div>
+        </div>
+
+        <!-- CASE STUDY 2: Campus Placement Eligibility -->
+        <div class="sql-case-card">
+          <div class="case-card-header">
+            <span class="case-badge">Case Study 2 &bull; Multi-Table Joins & Filtering</span>
+            <h3 class="case-title">Department Placement Rates & Eligibility Gating</h3>
+            <p class="case-business-q">
+              <strong>Business Question:</strong> For each academic department, what proportion of eligible students (CGPA &ge; 7.0 with 0 active backlogs) have secured at least one placement offer?
+            </p>
+          </div>
+
+          <div class="code-block-container">
+            <div class="code-block-header">
+              <span>MySQL Query</span>
+              <button class="copy-code-btn" data-code-id="sqlCode2" type="button">Copy SQL</button>
+            </div>
+            <pre><code id="sqlCode2">-- Calculate placement conversion rates for eligible engineering candidates
+SELECT 
+    d.department_name,
+    COUNT(s.student_id) AS eligible_candidates,
+    COUNT(DISTINCT p.student_id) AS placed_students,
+    ROUND((COUNT(DISTINCT p.student_id) * 100.0) / NULLIF(COUNT(s.student_id), 0), 2) AS placement_rate_pct,
+    ROUND(AVG(p.annual_ctc_lpa), 2) AS avg_package_lpa
+FROM departments d
+INNER JOIN students s 
+    ON d.department_id = s.department_id
+LEFT JOIN placement_offers p 
+    ON s.student_id = p.student_id
+WHERE s.cgpa >= 7.00 
+  AND s.active_backlogs = 0
+GROUP BY d.department_id, d.department_name
+ORDER BY placement_rate_pct DESC;</code></pre>
+          </div>
+
+          <div class="case-findings">
+            <strong>Key Analytical Insight:</strong> Computer Science and Electronics had the highest eligibility-to-offer conversion (&gt;80%), while highlighting students requiring targeted interview preparation.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         MODEL EVALUATION & ANALYTICS HIGHLIGHTS
+         ======================================================== -->
+    <section class="section model-eval" id="model-eval">
+      <div class="section-header">
+        <span class="section-label">Empirical Evaluation</span>
+        <h2 class="section-title">Model Evaluation & Analytics Highlights</h2>
+        <p class="section-subtitle">Evaluating predictive performance, trade-offs, and explainability on real-world datasets rather than relying on raw accuracy alone.</p>
+      </div>
+
+      <div class="eval-grid">
+        <!-- EVAL CARD 1: Customer Churn Evaluation -->
+        <div class="eval-card">
+          <div class="eval-card-header">
+            <span class="eval-badge">Customer Churn Classifier</span>
+            <h3 class="eval-title">Classification Metrics & Trade-Offs</h3>
+          </div>
+
+          <p class="eval-desc">
+            Because customer churn datasets frequently exhibit class imbalance (non-churners outnumber churners ~3:1), high accuracy can be misleading. Performance is therefore evaluated primarily via <strong>ROC-AUC</strong> and <strong>Recall</strong>.
+          </p>
+
+          <div class="metrics-table-wrap">
+            <table class="metrics-table">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>ROC-AUC</th>
+                  <th>Precision (Churn)</th>
+                  <th>Recall (Churn)</th>
+                  <th>F1-Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="highlight-row">
+                  <td><strong>Random Forest + Tuning</strong></td>
+                  <td><strong>0.84</strong></td>
+                  <td>0.68</td>
+                  <td><strong>0.79</strong></td>
+                  <td><strong>0.73</strong></td>
+                </tr>
+                <tr>
+                  <td>XGBoost Baseline</td>
+                  <td>0.82</td>
+                  <td>0.69</td>
+                  <td>0.74</td>
+                  <td>0.71</td>
+                </tr>
+                <tr>
+                  <td>Logistic Regression</td>
+                  <td>0.79</td>
+                  <td>0.62</td>
+                  <td>0.71</td>
+                  <td>0.66</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="eval-features-breakdown">
+            <h4>Top Contributing Factors (via SHAP):</h4>
+            <div class="shap-pill-row">
+              <span class="shap-pill">1. Tenure (Months) &bull; Negative Corr.</span>
+              <span class="shap-pill">2. Month-to-Month Contract &bull; Positive Corr.</span>
+              <span class="shap-pill">3. Monthly Charges &bull; Positive Corr.</span>
+              <span class="shap-pill">4. Tech Support Enrollment &bull; Negative Corr.</span>
+            </div>
+          </div>
+
+          <div class="eval-limitations-box">
+            <strong>Acknowledged Limitations:</strong> The model prioritizes recall to catch at-risk customers early, which accepts a moderate false-positive rate. In production, retention outreach budgets must guide threshold calibration.
+          </div>
+        </div>
+
+        <!-- EVAL CARD 2: CricketIQ Analytics Highlights -->
+        <div class="eval-card">
+          <div class="eval-card-header">
+            <span class="eval-badge">CricketIQ AI Analytics</span>
+            <h3 class="eval-title">Sports Forecasting & Lineup Calibration</h3>
+          </div>
+
+          <p class="eval-desc">
+            Evaluating match outcome probabilities against synthetic ball-tracking test splits across powerplay, middle, and death-over phases.
+          </p>
+
+          <div class="insights-summary-list">
+            <div class="insight-bullet">
+              <span class="insight-icon">📈</span>
+              <div>
+                <strong>Phase-Wise Wicket Probability:</strong> Death overs (overs 16–20) exhibited 2.4x higher dot-ball sensitivity to yorker cluster deliveries compared to middle overs.
+              </div>
+            </div>
+
+            <div class="insight-bullet">
+              <span class="insight-icon">🏏</span>
+              <div>
+                <strong>Impact Player Optimization:</strong> Linear programming constraints verified that adding bowling depth on spin-friendly pitches yielded higher expected point totals than an extra top-order batter.
+              </div>
+            </div>
+
+            <div class="insight-bullet">
+              <span class="insight-icon">⚖️</span>
+              <div>
+                <strong>Model Limitations:</strong> Unpredictable weather disruptions and dew factor are difficult to simulate cleanly and represent areas for continuous feature enhancement.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         GITHUB & TECHNICAL CODE SECTION
+         ======================================================== -->
+    <section class="section github-activity" id="github-code">
+      <div class="section-header">
+        <span class="section-label">Version Control & Open Source</span>
+        <h2 class="section-title">GitHub & Technical Code</h2>
+        <p class="section-subtitle">Documented repositories, clean commit history, and structured project architectures.</p>
+      </div>
+
+      <div class="github-repo-grid">
+        <div class="repo-card">
+          <div class="repo-card-top">
+            <span class="repo-type-tag">Public Repository</span>
+            <span class="repo-star-tag">⭐ Python / Streamlit</span>
+          </div>
+          <h3 class="repo-name">cricketiq-ai</h3>
+          <p class="repo-description">
+            Interactive cricket analytics and machine learning application with ball-tracking visualizations, head-to-head stats, and squad curation.
+          </p>
+          <div class="repo-footer">
+            <span class="repo-lang"><span class="lang-color python"></span>Python</span>
+            <a href="https://github.com/abhayraj04" target="_blank" rel="noopener noreferrer" class="repo-link">View Repo ↗</a>
+          </div>
+        </div>
+
+        <div class="repo-card">
+          <div class="repo-card-top">
+            <span class="repo-type-tag">Public Repository</span>
+            <span class="repo-star-tag">⭐ Scikit-learn / ML</span>
+          </div>
+          <h3 class="repo-name">customer-churn-intelligence</h3>
+          <p class="repo-description">
+            Telecom customer retention modeling with Scikit-learn, exploratory data analysis, SHAP value explanations, and what-if simulation interface.
+          </p>
+          <div class="repo-footer">
+            <span class="repo-lang"><span class="lang-color python"></span>Python</span>
+            <a href="https://github.com/abhayraj04" target="_blank" rel="noopener noreferrer" class="repo-link">View Repo ↗</a>
+          </div>
+        </div>
+
+        <div class="repo-card">
+          <div class="repo-card-top">
+            <span class="repo-type-tag">Public Repository</span>
+            <span class="repo-star-tag">⭐ Full-Stack / Database</span>
+          </div>
+          <h3 class="repo-name">campus-placement-portal</h3>
+          <p class="repo-description">
+            University placement portal featuring student eligibility queries, recruiter job postings, and multi-tier application workflows.
+          </p>
+          <div class="repo-footer">
+            <span class="repo-lang"><span class="lang-color js"></span>JavaScript</span>
+            <a href="https://github.com/abhayraj04" target="_blank" rel="noopener noreferrer" class="repo-link">View Repo ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience" id="experience">
+      <div class="section-header">
+        <span class="section-label">Professional Experience</span>
+        <h2 class="section-title">Internship & Roles</h2>
+      </div>
+
+      <div class="experience-timeline">
+        <!-- ITEM 1: Actual Info Era Internship -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Web Development Intern</h3>
+                <span class="org-name">Info Era Software Services Pvt. Ltd. &bull; Patna, Bihar</span>
+              </div>
+              <span class="timeline-pill">September – October 2025</span>
+            </div>
+            <p class="timeline-text">
+              Engaged in structured software development training, focusing on web programming, backend data handling, database connectivity, executing CRUD operations, and structured application debugging.
+            </p>
+            <div class="timeline-skills">
+              <span>Backend Data Handling</span>
+              <span>Database Connectivity</span>
+              <span>CRUD Operations</span>
+              <span>Application Debugging</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 2: Academic Team Lead -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Technical Project Lead & Coordinator</h3>
+                <span class="org-name">Academic Engineering Projects &bull; Dr. C. V. Raman University</span>
+              </div>
+              <span class="timeline-pill">Academic Leadership</span>
+            </div>
+            <p class="timeline-text">
+              Coordinated student teams across engineering coursework, organizing task breakdowns, repository management, and technical presentations on analytical software projects.
+            </p>
+            <div class="timeline-skills">
+              <span>Team Coordination</span>
+              <span>Task Scoping</span>
+              <span>Version Control</span>
+              <span>Technical Communication</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 3: NSS Volunteering -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Core Volunteer & Member</h3>
+                <span class="org-name">National Service Scheme (NSS)</span>
+              </div>
+              <span class="timeline-pill">Community & Engagement</span>
+            </div>
+            <p class="timeline-text">
+              Participated in community outreach initiatives, blood donation camps, and educational awareness drives, demonstrating strong collaborative spirit, ethics, and team responsibility.
+            </p>
+            <div class="timeline-skills">
+              <span>Community Service</span>
+              <span>Teamwork</span>
+              <span>Event Coordination</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education" id="education">
+      <div class="section-header">
+        <span class="section-label">Academic Foundations</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="education-grid">
+        <div class="education-card highlight">
+          <div class="edu-badge completed-badge">2022 – 2026 (Completed)</div>
+          <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+          <h4 class="edu-field">Computer Science and Engineering</h4>
+          <p class="edu-school">Dr. C. V. Raman University &bull; Vaishali, Bihar</p>
+          <p class="edu-timeline-span"><strong>Graduation Year: 2026</strong></p>
+          <p class="edu-description">
+            Completed core coursework in Data Structures & Algorithms, Database Management Systems, Machine Learning, Statistical Analysis, and Software Engineering.
+          </p>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-badge">Completed 2022</div>
+          <h3 class="edu-degree">Senior Secondary Education (Class XII)</h3>
+          <h4 class="edu-field">Science & Mathematics (PCM)</h4>
+          <p class="edu-school">Bihar School Examination Board (BSEB) &bull; Patna</p>
+          <p class="edu-timeline-span"><strong>Completed 2022</strong></p>
+          <p class="edu-description">
+            Subjects in Physics, Chemistry, and Advanced Mathematics fostering analytical and quantitative problem-solving foundations.
+          </p>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-badge">Completed 2020</div>
+          <h3 class="edu-degree">Secondary Education (Class X)</h3>
+          <h4 class="edu-field">General Sciences & Computer Applications</h4>
+          <p class="edu-school">Central Board of Secondary Education (CBSE)</p>
+          <p class="edu-timeline-span"><strong>Completed 2020</strong></p>
+          <p class="edu-description">
+            Built early fundamentals in computer programming, logic, and scientific problem-solving.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact" id="contact">
+      <div class="section-header">
+        <span class="section-label">Let's Connect</span>
+        <h2 class="section-title">Let's Turn Data Into Meaningful Insights</h2>
+        <p class="section-subtitle">
+          I am always interested in learning, collaborating, and exploring opportunities involving data analytics, machine learning, and technology. If you are a recruiter, data professional, or fellow developer, feel free to connect with me.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- CONTACT METHODS -->
+        <div class="contact-channels">
+          <a href="mailto:abhayraj74315@gmail.com" class="channel-card">
+            <div class="channel-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            </div>
+            <div class="channel-details">
+              <span class="channel-title">Direct Email</span>
+              <span class="channel-info" id="emailText">abhayraj74315@gmail.com</span>
+            </div>
+            <button class="channel-copy-btn" id="copyEmailBtn" type="button" title="Copy email address" aria-label="Copy email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </button>
+          </a>
+
+          <a href="tel:+919031531991" class="channel-card">
+            <div class="channel-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="channel-details">
+              <span class="channel-title">Phone / WhatsApp</span>
+              <span class="channel-info">+91 9031531991</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/abhay-raj-aa0928304" target="_blank" rel="noopener noreferrer" class="channel-card">
+            <div class="channel-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+            <div class="channel-details">
+              <span class="channel-title">LinkedIn Profile</span>
+              <span class="channel-info">Connect on LinkedIn</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/abhayraj04" target="_blank" rel="noopener noreferrer" class="channel-card">
+            <div class="channel-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </div>
+            <div class="channel-details">
+              <span class="channel-title">GitHub Portfolio</span>
+              <span class="channel-info">github.com/abhayraj04</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- QUICK MESSAGE FORM -->
+        <div class="contact-form-card">
+          <h3 class="form-title">Send a Direct Message</h3>
+          <p class="form-desc">Fill this out to reach me directly. Your email client will open with the information ready to send.</p>
+
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="senderName">Your Name</label>
+              <input type="text" id="senderName" name="name" placeholder="e.g. Recruiter / Collaborator" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail">Your Email</label>
+              <input type="email" id="senderEmail" name="email" placeholder="e.g. name@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderSubject">Subject</label>
+              <input type="text" id="senderSubject" name="subject" placeholder="Data Analyst role / Project discussion" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage">Message</label>
+              <textarea id="senderMessage" name="message" rows="4" placeholder="Hi Abhay, I reviewed your data analytics projects and would love to connect..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>🚀 Send Message to Abhay</span>
+              </button>
+              <a href="https://wa.me/919031531991?text=Hi%20Abhay,%20I'm%20interested%20in%20speaking%20with%20you" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                <span>💬 Chat on WhatsApp</span>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         WORLD-CLASS DEVELOPER FOOTER
+         ======================================================== -->
+    <footer class="footer">
+      <div class="footer-top-cta">
+        <div class="footer-cta-card">
+          <div class="cta-card-content">
+            <span class="cta-status-pill"><span class="pulse-ring-green"></span>Open to Work &bull; Immediate Availability</span>
+            <h3 class="cta-heading">Ready to Turn Data Into Actionable Intelligence?</h3>
+            <p class="cta-sub">Seeking entry-level opportunities as a Data Scientist, AI/ML Developer, or Data Analyst across India (Remote, Hybrid, or On-site).</p>
+          </div>
+          <div class="cta-card-actions">
+            <a href="mailto:abhayraj74315@gmail.com" class="btn btn-primary">
+              <span>📧 Get In Touch</span>
+            </a>
+            <a href="Abhay_Raj.pdf" download="Abhay_Raj_Resume.pdf" class="btn btn-secondary">
+              <span>📥 Download Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-inner-grid">
+        <!-- BRAND & BIO -->
+        <div class="footer-col footer-col-brand">
+          <a href="#home" class="logo-wrapper">
+            <div class="logo-badge-ring">
+              <div class="logo-badge">AR</div>
+            </div>
+            <div class="logo-info">
+              <span class="logo-text">Abhay Raj</span>
+              <span class="logo-sub">Data Scientist & AI Developer</span>
+            </div>
+          </a>
+          <p class="footer-tagline">
+            B.Tech in Computer Science and Engineering (2022–2026, Completed), Dr. C. V. Raman University. Transforming raw data into predictive intelligence with Python, SQL, and machine learning.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://github.com/abhayraj04" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/abhay-raj-aa0928304" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:abhayraj74315@gmail.com" class="social-icon-btn" aria-label="Direct Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            </a>
+            <a href="https://wa.me/919031531991?text=Hi%20Abhay,%20I%20saw%20your%20portfolio" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp Message">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- NAVIGATION LINKS -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recruiter-corner">Recruiter Brief</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#workflow">Problem-Solving Workflow</a></li>
+            <li><a href="#contact">Contact & Inquiry</a></li>
+          </ul>
+        </div>
+
+        <!-- FEATURED DEPLOYMENTS -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Flagship Projects</h4>
+          <ul class="footer-link-list">
+            <li><a href="https://cricketiq-ai-6v9zshmcx5xybirrsucsoh.streamlit.app/" target="_blank" rel="noopener noreferrer">CricketIQ AI (Streamlit) ↗</a></li>
+            <li><a href="https://customer-churn-intelligence-platform-h9fbshxjfay2vvvt4perax.streamlit.app/" target="_blank" rel="noopener noreferrer">Churn Intelligence (Streamlit) ↗</a></li>
+            <li><a href="https://campus-placement-portal-2663.onrender.com" target="_blank" rel="noopener noreferrer">Campus Placement Portal ↗</a></li>
+            <li><a href="https://india-pilgrimage.vercel.app/" target="_blank" rel="noopener noreferrer">India Pilgrimage Platform ↗</a></li>
+            <li><a href="#projects">All 6 Projects Showcase</a></li>
+          </ul>
+        </div>
+
+        <!-- RECRUITER & AI HUB -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Recruiter Hub</h4>
+          <ul class="footer-link-list">
+            <li><a href="Abhay_Raj.pdf" download="Abhay_Raj_Resume.pdf">📥 Download Official Resume</a></li>
+            <li><a href="#sql-cases">Practical SQL Studies</a></li>
+            <li><a href="#model-eval">Model Evaluation & SHAP</a></li>
+            <li><a href="#design-system">UI/UX Design Tokens</a></li>
+            <li><a href="mailto:abhayraj74315@gmail.com">Direct Email Abhay</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="copyrightYear">2026</span> <strong>Abhay Raj</strong>. Open to Work in Data Science & AI.</p>
+        <div class="footer-bottom-middle">
+          <span class="status-indicator"></span>
+          <span>B.Tech CSE Graduate &bull; Dr. C. V. Raman University</span>
+        </div>
+        <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+          <span>↑ Back to Top</span>
+        </button>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- IN-APP LIVE PROJECT PREVIEW MODAL -->
+  <!-- ======================================================== -->
+  <div class="project-preview-modal" id="projectPreviewModal" aria-hidden="true" role="dialog" aria-labelledby="previewModalTitle">
+    <div class="preview-modal-overlay" id="previewModalOverlay"></div>
+    <div class="preview-modal-container">
+      <div class="preview-modal-header">
+        <div class="preview-header-left">
+          <span class="preview-live-indicator">● LIVE APPLICATION PREVIEW</span>
+          <h3 class="preview-modal-title" id="previewModalTitle">Project Preview</h3>
+        </div>
+
+        <div class="preview-header-actions">
+          <div class="device-toggle-group">
+            <button class="device-toggle-btn active" id="previewDesktopBtn" title="Desktop View" aria-label="Desktop View">🖥️ Desktop</button>
+            <button class="device-toggle-btn" id="previewMobileBtn" title="Mobile View" aria-label="Mobile View">📱 Mobile</button>
+          </div>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="preview-external-btn" id="previewExternalLink">
+            <span>Open in New Tab ↗</span>
+          </a>
+          <button class="preview-close-btn" id="previewCloseBtn" aria-label="Close preview modal">✕</button>
+        </div>
+      </div>
+
+      <div class="preview-modal-body" id="previewModalBody">
+        <div class="preview-loading-spinner" id="previewSpinner">
+          <div class="spinner-circle"></div>
+          <p>Connecting to live deployed application...</p>
+        </div>
+        <iframe src="about:blank" id="previewIframe" title="Live Project Preview" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- WORLD-CLASS AI ASSISTANT WIDGET ("Ask Abhay AI") -->
+  <!-- ======================================================== -->
+  <div class="ai-assistant-widget" id="aiAssistantWidget">
+    
+    <!-- FLOATING TOGGLE BUTTON -->
+    <button class="ai-widget-trigger" id="aiWidgetTrigger" aria-label="Open Abhay AI Assistant" title="Ask Abhay's AI Assistant">
+      <span class="trigger-sparkle">✨</span>
+      <span class="trigger-label">Ask Abhay AI</span>
+      <span class="trigger-status-pulse"></span>
+    </button>
+
+    <!-- CHAT WINDOW MODAL -->
+    <div class="ai-chat-window" id="aiChatWindow" aria-hidden="true" role="dialog" aria-labelledby="chatHeaderTitle">
+      
+      <!-- CHAT HEADER -->
+      <div class="ai-chat-header">
+        <div class="chat-header-info">
+          <div class="ai-avatar">
+            <span>AR</span>
+            <span class="ai-online-dot"></span>
+          </div>
+          <div>
+            <h3 class="chat-header-title" id="chatHeaderTitle">Abhay's AI Assistant</h3>
+            <span class="chat-header-subtitle">Aspiring Data Analyst &bull; Skills, Projects & Queries</span>
+          </div>
+        </div>
+
+        <div class="chat-header-actions">
+          <button class="chat-tool-btn" id="aiVoiceToggleBtn" title="Toggle audio speech read-out" aria-label="Toggle voice response">
+            <span id="aiVoiceIcon">🔊</span>
+          </button>
+          <button class="chat-tool-btn" id="aiClearChatBtn" title="Clear chat history" aria-label="Clear chat">
+            <span>🗑️</span>
+          </button>
+          <button class="chat-tool-btn close-btn" id="aiCloseChatBtn" title="Close chat window" aria-label="Close chat">
+            <span>✕</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- CHAT BODY / MESSAGES -->
+      <div class="ai-chat-messages" id="aiChatMessages" role="log" aria-live="polite">
+        <!-- AI GREETING -->
+        <div class="chat-message ai-message">
+          <div class="message-avatar">✨</div>
+          <div class="message-bubble">
+            <p><strong>Hi there! I'm Abhay's AI Portfolio Assistant.</strong> 👋</p>
+            <p>Abhay is an <strong>Aspiring Data Analyst / Data Science Enthusiast</strong> (B.Tech CSE Graduate, Dr. C. V. Raman University).</p>
+            <p>Feel free to ask about his <strong>technical skills</strong>, <strong>SQL case studies</strong>, <strong>CricketIQ AI</strong>, <strong>Customer Churn Intelligence</strong>, or his <strong>resume</strong>!</p>
+            <p class="quick-prompt-intro">Tap any suggestion below to start:</p>
+          </div>
+        </div>
+
+        <!-- QUICK PROMPT CHIPS -->
+        <div class="ai-prompt-chips" id="aiPromptChips">
+          <button class="chip-btn" data-prompt="What are Abhay's primary technical skills?">🛠️ Technical Skills</button>
+          <button class="chip-btn" data-prompt="Tell me about the Customer Churn Intelligence Platform">📊 Churn Platform</button>
+          <button class="chip-btn" data-prompt="Tell me about CricketIQ AI">🏏 CricketIQ AI</button>
+          <button class="chip-btn" data-prompt="What is Abhay's data analysis workflow?">🔄 Problem-Solving Workflow</button>
+          <button class="chip-btn" data-prompt="What SQL topics does Abhay know?">🗄️ SQL Case Studies</button>
+          <button class="chip-btn" data-prompt="What roles is Abhay seeking?">💼 Career Objective & Roles</button>
+          <button class="chip-btn" data-prompt="How can I contact Abhay?">📬 Contact & Resume</button>
+        </div>
+      </div>
+
+      <!-- CHAT FOOTER / INPUT -->
+      <form class="ai-chat-input-bar" id="aiChatForm">
+        <input 
+          type="text" 
+          id="aiChatInput" 
+          placeholder="Ask a question about Abhay..." 
+          autocomplete="off" 
+          required 
+          aria-label="Message for Abhay's AI Assistant"
+        >
+        <button type="submit" class="ai-send-btn" id="aiSendBtn" aria-label="Send message">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- MAIN SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>

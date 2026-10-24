@@ -1,0 +1,21 @@
+{
+  "name": "abhay-raj-portfolio",
+  "version": "3.0.0",
+  "description": "World-Class Data Analyst & AI/ML Developer Portfolio of Abhay Raj",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000",
+    "deploy": "npx vercel --prod"
+  },
+  "keywords": [
+    "data-analyst",
+    "machine-learning",
+    "python",
+    "streamlit",
+    "portfolio",
+    "abhay-raj"
+  ],
+  "author": "Abhay Raj <abhayraj74315@gmail.com>",
+  "license": "MIT"
+}

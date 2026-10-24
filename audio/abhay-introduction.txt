@@ -1,0 +1,10 @@
+This is a placeholder for your voice introduction.
+
+Replace this file with an actual MP3 recording of your introduction.
+
+File name: abhay-introduction.mp3
+Location: audio/abhay-introduction.mp3
+
+See README.md in this directory for detailed instructions on creating and adding your voice introduction audio file.
+
+The voice introduction feature in your portfolio is ready to use - just add the audio file here!
